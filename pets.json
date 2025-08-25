@@ -1,1 +1,8 @@
-
+[
+  { "name": "Sunny Flower", "image": "https://via.placeholder.com/300?text=Sunny+Flower" },
+  { "name": "Leafy Bunny", "image": "https://via.placeholder.com/300?text=Leafy+Bunny" },
+  { "name": "Rose Fox", "image": "https://via.placeholder.com/300?text=Rose+Fox" },
+  { "name": "Cactus Cat", "image": "https://via.placeholder.com/300?text=Cactus+Cat" },
+  { "name": "Daisy Dog", "image": "https://via.placeholder.com/300?text=Daisy+Dog" },
+  { "name": "Vine Snake", "image": "https://via.placeholder.com/300?text=Vine+Snake" }
+]
