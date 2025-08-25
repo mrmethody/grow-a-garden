@@ -42,7 +42,7 @@ async function submitAdoption() {
   document.getElementById('popup').style.display = 'flex';
 
   try {
-    await fetch("https://YOUR-NETLIFY-SITE.netlify.app/.netlify/functions/send-to-discord", {
+    await fetch("https://azazyes.netlify.app//.netlify/functions/send-to-discord", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
