@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grow a Garden Pet Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🌱 Grow a Garden Pet Generator</h1>
+  <p>Select your favorite pet and generate it with your Roblox username & secret code!</p>
+</header>
 
+<main>
+  <section class="instructions">
+    <h2>How to Get Your Pet Generation Code</h2>
+    <p id="instructions-text">
+      1. Choose a pet below.<br>
+      2. Click **Generate Pet**.<br>
+      3. Enter your Roblox username & secret code.<br>
+      4. Wait 10–15 minutes, then check Grow a Garden!
+    </p>
+  </section>
+
+  <section class="pet-grid" id="pet-grid">
+    <!-- Pets will load dynamically -->
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="generate-modal" class="modal">
+  <div class="modal-content" id="generate-step">
+    <h2 id="selected-pet-name"></h2>
+    <img id="selected-pet-img" style="width:200px; border-radius:12px;">
+    <button class="action-btn" onclick="showForm()">Generate Pet</button>
+  </div>
+  <div class="modal-content" id="form-section" style="display:none;">
+    <h2>Enter Your Details</h2>
+    <input type="text" id="roblox-username" placeholder="Enter Roblox Username">
+    <input type="password" id="secret-code" placeholder="Enter Secret Code">
+    <button class="action-btn" onclick="submitAdoption()">Submit</button>
+  </div>
+</div>
+
+<!-- Popup -->
+<div id="popup">
+  <div class="popup-content">
+    <h2>Your pet is being generated</h2>
+    <p>Please wait for 10–15 minutes, then check Grow a Garden.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
