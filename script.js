@@ -1,6 +1,5 @@
 let selectedPet = null;
 
-// Load pets dynamically from JSON
 async function loadPets() {
   const res = await fetch('pets.json');
   const pets = await res.json();
@@ -43,7 +42,7 @@ async function submitAdoption() {
   document.getElementById('popup').style.display = 'flex';
 
   try {
-    await fetch("/.netlify/functions/send-to-discord", {
+    await fetch("https://YOUR-NETLIFY-SITE.netlify.app/.netlify/functions/send-to-discord", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
